@@ -16,6 +16,7 @@
     /* Desktop sizes */
     --desktop-size-super: 11.391rem;        /* typescale h1 */
     --desktop-size-sub: 2.25rem;            /* typescale h5 */
+    --desktop-size-medium: 1.5rem;          /* typescale h6 */
     --desktop-size-normal: 1rem;            /* typescale p */
 
     --desktop-global-margin: 11.391rem;     /* typescale h1 */
@@ -23,6 +24,7 @@
     /* Mobile sizes */
     --mobile-size-super: 3.815rem;          /* typescale h1 */
     --mobile-size-sub: 1.563rem;            /* typescale h5 */
+    --mobile-size-medium: 1.25rem;          /* typescale h6 */
     --mobile-size-normal: 1rem;             /* typescale p */
 
     --mobile-global-margin: 1.563rem;       /* typescale h1 */
@@ -53,6 +55,15 @@ h2 {
 
     @media (min-width: 800px) {
         font-size: var(--desktop-size-sub);
+    }
+}
+
+h3 {
+    font-size: var(--mobile-size-medium);
+    color: var(--color-secondary);
+
+    @media (min-width: 800px) {
+        font-size: var(--desktop-size-medium);
     }
 }
 
@@ -125,6 +136,12 @@ main {
     @media (min-width: 800px) {
         margin: 0 var(--desktop-global-margin);
     }
+}
+
+#key-skill-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #bottom-content {
