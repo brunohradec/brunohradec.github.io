@@ -142,6 +142,52 @@ h3 {
     }
 }
 
+#top-header-nav a {
+    text-decoration: none;
+}
+
+.nav-pill {
+    box-sizing: border-box;
+
+    background-color: var(--color-bg-pill);
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 0.4rem 0 1rem;
+
+    margin: 0.4rem 0;
+    max-width: var(--p-width-limit);
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.nav-pill:hover {
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.nav-pill .nav-pill-icon {
+    background-color: var(--color-neutral);
+    color: var(--color-bg-primary);
+
+    height: 2.4rem;
+    width: 2.4rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+    font-size: 1.4rem;
+
+}
+
 /* MAIN CONTENT */
 
 main {
