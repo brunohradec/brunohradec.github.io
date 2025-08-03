@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    /* Colors */
+    --color-bg-primary: #686f82;
+
+    --color-primary: #eda870;
+    --color-secondary: #b7878d;
+    --color-neutral: #bdbdbd;
+
+    /* Font stacks */
+    --font-stack-sans: "Inter", sans-serif;
+    --font-stack-mono: "IBM Plex Mono", monospace;
+
+    /* Desktop sizes */
+    --desktop-size-super: 11.391rem;        /* typescale h1 */
+    --desktop-size-sub: 2.25rem;            /* typescale h5 */
+    --desktop-size-normal: 1rem;            /* typescale p */
+
+    --desktop-global-margin: 11.391rem;     /* typescale h1 */
+
+    /* Mobile sizes */
+    --mobile-size-super: 3.815rem;          /* typescale h1 */
+    --mobile-size-sub: 1.563rem;            /* typescale h5 */
+    --mobile-size-normal: 1rem;             /* typescale p */
+
+    --mobile-global-margin: 1.563rem;       /* typescale h1 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--color-bg-primary);
+    color: var(--color-neutral);
+
+    font-family: var(--font-stack-sans);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-neutral);
+}
+
+h2 {
+    font-size: var(--mobile-size-sub);
+    color: var(--color-primary);
+
+    @media (min-width: 800px) {
+        font-size: var(--desktop-size-sub);
+    }
+}
+
+#top-header {
+    /* Takes full device view height, taking browser toolbars into consideration */
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#top-header-content {
+    margin: 0 var(--mobile-global-margin);
+
+    @media (min-width: 800px) {
+        margin: 0 var(--desktop-global-margin);
+    }
+}
+
+#top-header-title {
+    font-family: var(--font-stack-mono);
+    font-weight: bold;
+
+    font-size: var(--mobile-size-super);
+    line-height: 0.875;
+
+    color: var(--color-primary);
+
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 800px) {
+        font-size: var(--desktop-size-super);
+    }
+}
+
+#top-header-subtitle {
+    color: var(--color-secondary);
+
+    font-size: var(--mobile-size-sub);
+    margin: var(--mobile-size-sub) 0 0 0;
+
+    @media (min-width: 800px) {
+        font-size: var(--desktop-size-sub);
+        margin: var(--desktop-size-sub) 0 0 0;
+
+        /* Correction to optically align the subtitle with the title. */
+        padding: 0 0 0 0.5rem;
+    }
+}
+
+#top-header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: var(--mobile-size-sub) 0 0 0;;
+
+    @media (min-width: 800px) {
+        margin: var(--desktop-size-sub) 0 0 0;
+
+        /* Correction to optically align the nav with the title and subtitle. */
+        padding: 0 0 0 0.5rem;
+    }
+}
+
+main {
+    margin: 0 var(--mobile-global-margin);
+
+    @media (min-width: 800px) {
+        margin: 0 var(--desktop-global-margin);
+    }
+}
+
+#bottom-content {
+    margin: 0 var(--mobile-global-margin);
+
+    @media (min-width: 800px) {
+        margin: 0 var(--desktop-global-margin);
+    }
+}
