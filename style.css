@@ -5,11 +5,12 @@
 
 :root {
     /* Colors */
-    --color-bg-primary: #686f82;
+    --color-bg-primary: #161210;
     --color-bg-secondary: #c6b2a8;
+    --color-bg-pill: #238080;
 
     --color-primary: #eda870;
-    --color-secondary: #b7878d;
+    --color-secondary: #d4979e;
     --color-neutral: #bdbdbd;
 
     /* Font stacks */
@@ -197,6 +198,10 @@ main {
     @media (min-width: 800px) {
         width: 25%;
     }
+
+    box-shadow: 
+        rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, 
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .project-pill-title {
@@ -223,10 +228,12 @@ main {
 }
 
 .project-pill-tech-tags li {
-    background-color: var(--color-secondary);
+    background-color: var(--color-bg-pill);
+    color: var(--color-neutral);
+    
     border-radius: 0.4rem;
     
-    padding: 0.2rem;
+    padding: 0.2rem 0.3rem;
     margin: 0 0.2rem 0.2rem 0;
 }
 
