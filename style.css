@@ -5,14 +5,15 @@
 
 :root {
     /* Colors */
-    --color-bg-primary: #161210;
-    --color-bg-secondary: #c6b2a8;
-    --color-bg-pill: #238080;
+    --color-bg-primary: #f9f4ef;
+    --color-bg-secondary: #e3dfdb;
+    --color-bg-pill: #7287fd;
+
+    --color-fg-primary: #4c4f69;
 
     --color-primary: #eda870;
-    --color-secondary: #d4979e;
-    --color-neutral: #bdbdbd;
-
+    --color-secondary: #c67982;
+    
     /* Font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
     --font-stack-title: "IBM Plex Mono", monospace;
@@ -47,14 +48,14 @@ body {
     padding: 0;
 
     background-color: var(--color-bg-primary);
-    color: var(--color-neutral);
+    color: var(--color-fg-primary);
 
     font-family: var(--font-stack-sans);
 }
 
 a {
     text-decoration: underline;
-    color: var(--color-neutral);
+    color: var(--color-fg-primary);
 }
 
 /* TYPOGRAPHY */
@@ -207,18 +208,19 @@ main {
 .project-pill-title {
     font-size: var(--desktop-size-normal);
     font-weight: bold;
-    color: var(--color-bg-primary);
+    color: var(--color-fg-primary);
 
     margin: 0;
     padding: 0;
 }
 
 .project-pill-description {
-    color: var(--color-bg-primary);
+    color: var(--color-fg-primary);
 }
 
 .project-pill-tech-tags {
     list-style-type: none;
+    
     margin: 0;
     padding: 0;
 
@@ -229,7 +231,9 @@ main {
 
 .project-pill-tech-tags li {
     background-color: var(--color-bg-pill);
-    color: var(--color-neutral);
+    
+    color: var(--color-fg-primary);
+    font-weight: 500;
     
     border-radius: 0.4rem;
     
@@ -241,12 +245,13 @@ main {
 
 #bottom-content {
     background-color: var(--color-bg-secondary);
-    color: var(--color-bg-primary);
+    color: var(--color-fg-primary);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.4rem 0;
+    padding: 1rem 0;
     margin: 3rem 0 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
