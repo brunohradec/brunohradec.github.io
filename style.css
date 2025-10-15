@@ -28,6 +28,8 @@
 
     --desktop-global-margin: 11.391rem;     /* typescale h1 */
 
+    --section-distance: 7.59375rem;
+
     /* Mobile sizes */
     --mobile-size-super: 3.815rem;          /* typescale h1 */
     --mobile-size-sub: 1.563rem;            /* typescale h5 */
@@ -152,6 +154,12 @@ main {
     @media (min-width: 800px) {
         margin: 0 var(--desktop-global-margin);
     }
+}
+
+/* SECTIONS */
+
+main section {
+    margin-bottom: var(--section-distance);
 }
 
 /* ABOUT SECTION */
