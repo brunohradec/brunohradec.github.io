@@ -12,6 +12,7 @@
     --color-fg-primary: #bdbdbd;
 
     --color-primary: #eda870;
+    --color-primary-shadow: #a16a3e;
     --color-secondary: #d4979e;
     
     /* Font stacks */
@@ -115,6 +116,20 @@ h3 {
     @media (min-width: 800px) {
         font-size: var(--desktop-size-super);
     }
+
+    text-shadow: 
+        -1px 0 var(--color-primary-shadow), 
+        0 1px var(--color-primary-shadow), 
+        1px 0 var(--color-primary-shadow), 
+        0 -1px var(--color-primary-shadow), 
+        -8px 8px var(--color-primary-shadow), 
+        -7px 7px var(--color-primary-shadow), 
+        -6px 6px var(--color-primary-shadow), 
+        -5px 5px var(--color-primary-shadow), 
+        -4px 4px var(--color-primary-shadow), 
+        -3px 3px var(--color-primary-shadow), 
+        -2px 2px var(--color-primary-shadow), 
+        -1px 1px var(--color-primary-shadow);
 }
 
 #top-header-subtitle {
