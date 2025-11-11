@@ -155,12 +155,14 @@ h3 {
     font-size: var(--mobile-size-sub);
     margin: var(--mobile-size-sub) 0 0 0;
 
+    line-height: var(--mobile-size-sub);
+
     @media (min-width: 800px) {
         font-size: var(--desktop-size-sub);
         margin: var(--desktop-size-sub) 0 0 0;
 
         /* Correction to optically align the subtitle with the title. */
-        padding: 0 0 0 0.5rem;
+        padding: 0 0 0 0.1rem;
     }
 }
 
@@ -179,7 +181,7 @@ h3 {
         margin: var(--desktop-size-sub) 0 0 0;
 
         /* Correction to optically align the nav with the title and subtitle. */
-        padding: 0 0 0 0.5rem;
+        padding: 0 0 0 0.2rem;
     }
 }
 
