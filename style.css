@@ -14,6 +14,8 @@
     --color-primary: #eda870;
     --color-primary-shadow: #865832;
     --color-secondary: #d4979e;
+
+    --color-green: #8bd5ca;
     
     /* Font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
@@ -156,6 +158,11 @@ h3 {
         /* Correction to optically align the subtitle with the title. */
         padding: 0 0 0 0.5rem;
     }
+}
+
+#top-header-much-more {
+    color: var(--color-green);
+    font-style: italic;
 }
 
 #top-header-nav ul {
