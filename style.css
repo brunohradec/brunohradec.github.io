@@ -81,6 +81,12 @@ h3 {
     }
 }
 
+.mobile-break {
+    @media (min-width: 800px) {
+        display: none;
+    }
+}
+
 /* TOP HEADER */
 
 #top-header {
