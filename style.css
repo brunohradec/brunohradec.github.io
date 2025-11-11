@@ -7,15 +7,13 @@
     /* Colors */
     --color-bg-primary: #161210;
     --color-bg-secondary: #292524;
-    --color-bg-pill: #a6a7ee;
+    --color-bg-pill: #d4979e;
 
     --color-fg-primary: #bdbdbd;
 
     --color-primary: #eda870;
     --color-primary-shadow: #865832;
     --color-secondary: #d4979e;
-
-    --color-green: #8bd5ca;
     
     /* Font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
@@ -161,7 +159,7 @@ h3 {
 }
 
 #top-header-much-more {
-    color: var(--color-green);
+    color: var(--color-primary);
     font-style: italic;
 }
 
