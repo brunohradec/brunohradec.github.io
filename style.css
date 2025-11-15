@@ -81,12 +81,6 @@ h3 {
     }
 }
 
-.mobile-break {
-    @media (min-width: 800px) {
-        display: none;
-    }
-}
-
 /* TOP HEADER */
 
 #top-header {
@@ -164,11 +158,6 @@ h3 {
         /* Correction to optically align the subtitle with the title. */
         padding: 0 0 0 0.1rem;
     }
-}
-
-#top-header-much-more {
-    color: var(--color-primary);
-    font-style: italic;
 }
 
 #top-header-nav ul {
