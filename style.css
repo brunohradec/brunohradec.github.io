@@ -22,12 +22,12 @@
     --p-width-limit: 38.445rem;
 
     /* desktop sizes */
-    --desktop-size-h1: 17.5rem;             /* typescale h1 */
+    --desktop-size-h1: 11.391rem;           /* typescale h1 */
     --desktop-size-h2: 2.25rem;             /* typescale h5 */
     --desktop-size-h3: 1.5rem;              /* typescale h6 */
     --desktop-size-p: 1rem;                 /* typescale p */
 
-    --desktop-global-margin: 17.5rem;       /* typescale h1 */
+    --desktop-global-margin: 11.391rem;     /* typescale h1 */
 
     /* mobile sizes */
     --mobile-size-h1: 3.815rem;             /* typescale h1 */
