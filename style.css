@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* VARIABLES */
+/* variables */
 
 :root {
-    /* Colors */
+    /* colors */
     --color-bg-primary: #161210;
     --color-bg-secondary: #292524;
     --color-bg-pill: #d4979e;
@@ -15,32 +15,30 @@
     --color-primary-shadow: #865832;
     --color-secondary: #d4979e;
     
-    /* Font stacks */
+    /* font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
     --font-stack-title: "IBM Plex Mono", monospace;
 
     --p-width-limit: 38.445rem;
 
-    /* Desktop sizes */
-    --desktop-size-super: 11.391rem;        /* typescale h1 */
-    --desktop-size-sub: 2.25rem;            /* typescale h5 */
-    --desktop-size-medium: 1.5rem;          /* typescale h6 */
-    --desktop-size-normal: 1rem;            /* typescale p */
+    /* desktop sizes */
+    --desktop-size-h1: 11.391rem;           /* typescale h1 */
+    --desktop-size-h2: 2.25rem;             /* typescale h5 */
+    --desktop-size-h3: 1.5rem;              /* typescale h6 */
+    --desktop-size-p: 1rem;                 /* typescale p */
 
     --desktop-global-margin: 11.391rem;     /* typescale h1 */
 
-    --section-distance: 7.59375rem;
-
-    /* Mobile sizes */
-    --mobile-size-super: 3.815rem;          /* typescale h1 */
-    --mobile-size-sub: 1.563rem;            /* typescale h5 */
-    --mobile-size-medium: 1.25rem;          /* typescale h6 */
-    --mobile-size-normal: 1rem;             /* typescale p */
+    /* mobile sizes */
+    --mobile-size-h1: 3.815rem;             /* typescale h1 */
+    --mobile-size-h2: 1.563rem;             /* typescale h5 */
+    --mobile-size-h3: 1.25rem;              /* typescale h6 */
+    --mobile-size-p: 1rem;                  /* typescale p */
 
     --mobile-global-margin: 1.563rem;       /* typescale h1 */
 }
 
-/* GENERAL */
+/* general styles */
 
 html {
     scroll-behavior: smooth;
@@ -61,27 +59,25 @@ a {
     color: var(--color-fg-primary);
 }
 
-/* TYPOGRAPHY */
+/* typography */
 
 h2 {
-    font-size: var(--mobile-size-sub);
-    color: var(--color-primary);
+    font-size: var(--mobile-size-h2);
 
     @media (min-width: 800px) {
-        font-size: var(--desktop-size-sub);
+        font-size: var(--desktop-size-h2);
     }
 }
 
 h3 {
-    font-size: var(--mobile-size-medium);
-    color: var(--color-secondary);
+    font-size: var(--mobile-size-h3);
 
     @media (min-width: 800px) {
-        font-size: var(--desktop-size-medium);
+        font-size: var(--desktop-size-h3);
     }
 }
 
-/* TOP HEADER */
+/* top header */
 
 #top-header {
     /* Takes full device view height, taking browser toolbars into consideration */
@@ -102,12 +98,11 @@ h3 {
 }
 
 #top-header-title {
-    font-family: var(--font-stack-title);
-    font-weight: bold;
-
-    font-size: var(--mobile-size-super);
+    font-size: var(--mobile-size-h1);
     line-height: 0.875;
 
+    font-family: var(--font-stack-title);
+    font-weight: bold;
     color: var(--color-primary);
 
     padding: 0;
@@ -125,7 +120,7 @@ h3 {
         -1px 1px var(--color-primary-shadow);
 
     @media (min-width: 800px) {
-        font-size: var(--desktop-size-super);
+        font-size: var(--desktop-size-h1);
         
         text-shadow: 
             -1px 0 var(--color-primary-shadow), 
@@ -145,17 +140,13 @@ h3 {
 
 #top-header-subtitle {
     color: var(--color-secondary);
-
-    font-size: var(--mobile-size-sub);
-    margin: var(--mobile-size-sub) 0 0 0;
-
-    line-height: var(--mobile-size-sub);
+    margin: 2.25rem 0 0 0;
+    line-height: var(--mobile-size-h2);
 
     @media (min-width: 800px) {
-        font-size: var(--desktop-size-sub);
-        margin: var(--desktop-size-sub) 0 0 0;
+        margin: 2.25rem 0 0 0;
 
-        /* Correction to optically align the subtitle with the title. */
+        /* Correction to optically align the subtitle with the title */
         padding: 0 0 0 0.1rem;
     }
 }
@@ -163,18 +154,18 @@ h3 {
 #top-header-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: var(--mobile-size-sub) 0 0 0;;
+    margin: 1.563rem 0 0 0;;
     font-size: 1.2rem;
 
     @media (min-width: 800px) {
-        margin: var(--desktop-size-sub) 0 0 0;
+        margin: 2.25rem 0 0 0;
 
-        /* Correction to optically align the nav with the title and subtitle. */
+        /* Correction to optically align the nav with the title and subtitle */
         padding: 0 0 0 0.2rem;
     }
 }
 
-/* MAIN CONTENT */
+/* main content */
 
 main {
     margin: 0 var(--mobile-global-margin);
@@ -184,19 +175,23 @@ main {
     }
 }
 
-/* SECTIONS */
+/* sections (general) */
 
 main section {
-    margin-bottom: var(--section-distance);
+    margin-bottom: 7.59375rem;;
 }
 
-/* ABOUT SECTION */
+main section h2 {
+    color: var(--color-primary);
+}
+
+/* about section */
 
 #about p {
     max-width: var(--p-width-limit);
 }
 
-/* SKILLS SECTION */
+/* skills section */
 
 #key-skills-list p {
     max-width: var(--p-width-limit);
@@ -206,7 +201,7 @@ main section {
     max-width: var(--p-width-limit);
 }
 
-/* PROJECTS SECTION */
+/* projects section */
 
 #project-list {
     list-style-type: none;
@@ -224,7 +219,7 @@ main section {
     box-sizing: border-box;
     
     background-color: var(--color-bg-secondary);
-    padding: var(--desktop-size-medium);
+    padding: 1.5rem;
     border-radius: 2rem;
 
     display: flex;
@@ -240,7 +235,7 @@ main section {
 }
 
 .project-pill-title {
-    font-size: var(--desktop-size-normal);
+    font-size: var(--desktop-size-p);
     font-weight: bold;
     color: var(--color-fg-primary);
 
