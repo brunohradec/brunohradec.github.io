@@ -6,7 +6,8 @@
 :root {
     /* colors */
     --color-bg-primary: #161210;
-    --color-bg-secondary: #292524;
+    --color-bg-secondary: #201d1c;
+    --color-bg-border: #3a3533;
     --color-bg-pill: #d4979e;
 
     --color-fg-primary: #bdbdbd;
@@ -225,6 +226,7 @@ main section h3 {
     background-color: var(--color-bg-secondary);
     padding: 1.5rem;
     border-radius: 2rem;
+    border: 1px solid var(--color-bg-border);
 
     display: flex;
     flex-direction: column;
