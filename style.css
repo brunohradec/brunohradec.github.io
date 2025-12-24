@@ -196,6 +196,16 @@ main section h3 {
     max-width: var(--p-width-limit);
 }
 
+/* skills section */
+
+#key-skills-list p {
+    max-width: var(--p-width-limit);
+}
+
+#other-skills-list li {
+    max-width: var(--p-width-limit);
+}
+
 /* projects section */
 
 #project-list {
