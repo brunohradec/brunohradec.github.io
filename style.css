@@ -71,11 +71,9 @@ a {
     height: 300%;
 
     background: url(res/film-grain.png);
-    background-blend-mode: darken;
+    opacity: 0.1;
 
 	animation: .2s steps(3, jump-none) infinite grain-movement;
-	
-    opacity: 0.1;
 }
 
 @keyframes grain-movement {
