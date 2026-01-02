@@ -60,6 +60,32 @@ a {
     color: var(--color-fg-primary);
 }
 
+/* film grain overlay */
+
+#film-grain-overlay {
+    /* Make the overlay click through */
+    pointer-events: none;
+
+    position: fixed;
+    width: 300%;
+    height: 300%;
+
+    background: url(res/film-grain.png);
+    background-blend-mode: darken;
+
+	animation: .2s steps(3, jump-none) infinite grain-movement;
+	
+    opacity: 0.1;
+}
+
+@keyframes grain-movement {
+	0% { background-position: 234px 0; }
+    25% { background-position: 123px 0; }
+	50% { background-position: 0 123px; }
+    75% { background-position: 234px 123px; }
+	100% { background-position: 345px 123px; }
+}
+
 /* typography */
 
 h2 {
