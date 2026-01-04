@@ -21,10 +21,13 @@
         <link rel="icon" type="image/svg+xml" href="./res/favicon.svg" />
         <link rel="stylesheet" href="style.css" />
 
+        <!-- verification for google search console access -->
         <meta name="google-site-verification" content="QR6dZpUa3sBKyGt-8q6EB2Nj6xgquxJRntwabwW7J2E" />
     </head>
 
     <body>
+        <!-- settings button and settings overlay -->
+
         <button id="open-settings-button" onclick="showSettingsOverlay()">
             <img src="res/icons/settings.svg" alt="settings">
         </button>
@@ -44,7 +47,11 @@
             </div>
         </div>
 
+        <!-- film grain effect overlay (just for fun!) -->
+
         <div id="film-grain-overlay"></div>
+
+        <!-- main header and landing -->
 
         <header id="top-header">
             <div id="top-header-content">
@@ -64,6 +71,9 @@
                 </nav>
             </div>
         </header>
+
+        <!-- page main sections -->
+
         <main>
             <section id="about">
                 <h2>About me</h2>
@@ -265,9 +275,13 @@
             </section>
         </main>
 
+        <!-- page footer -->
+
         <footer>
             <div id="bottom-content">Made with ❤️ by me</div>
         </footer>
+
+        <!-- script placed at the bottom as content needs to be rendered before script can access it -->
 
         <script>
             const settingsOverlay = document.getElementById("settings-overlay");
