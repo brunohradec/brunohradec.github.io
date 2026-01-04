@@ -25,7 +25,27 @@
     </head>
 
     <body>
+        <button id="open-settings-button" onclick="showSettingsOverlay()">
+            <img src="res/icons/settings.svg" alt="settings">
+        </button>
+        
+        <div id="settings-overlay">
+            <div id="settings-top-bar">
+                <h2 id="settings-title">Settings</h2>
+                <button id="close-settings-button" onclick="hideSettingsOverlay()">
+                    <img src="res/icons/close.svg" alt="close">
+                </button>
+            </div>
+            <div id="settings-content">
+                <div class="settings-row">
+                    <label for="film-grain-slider">Enable film grain</label>
+                    <input class="slider" type="checkbox" id="film-grain-slider" onclick="toggleFilmGrain()">
+                </div>
+            </div>
+        </div>
+
         <div id="film-grain-overlay"></div>
+
         <header id="top-header">
             <div id="top-header-content">
                 <h1 id="top-header-title">Bruno<br>Hradec</h1>
@@ -248,5 +268,39 @@
         <footer>
             <div id="bottom-content">Made with ❤️ by me</div>
         </footer>
+
+        <script>
+            const settingsOverlay = document.getElementById("settings-overlay");
+            const openSettingsButton = document.getElementById("open-settings-button");
+            const closeSettingsButton = document.getElementById("close-settings-button");
+            const filmGrainSlider = document.getElementById("film-grain-slider");
+            
+            const filmGrainOverlay = document.getElementById("film-grain-overlay");
+
+
+            function showSettingsOverlay() {
+                settingsOverlay.style.display = "flex";
+            }
+
+            function hideSettingsOverlay() {
+                settingsOverlay.style.display = "none";
+            }
+
+            function startFilmGrain() {
+                filmGrainOverlay.style.display = "block"
+            }
+
+            function stopFilmGrain() {
+                filmGrainOverlay.style.display = "none"
+            }
+
+            function toggleFilmGrain() {
+                if (filmGrainSlider.checked) {
+                    startFilmGrain();
+                } else {
+                    stopFilmGrain();
+                }
+            }
+        </script>
     </body>
 </html>
