@@ -26,31 +26,6 @@
     </head>
 
     <body>
-        <!-- settings button and settings overlay -->
-
-        <button id="open-settings-button" onclick="showSettingsOverlay()">
-            <img src="res/icons/settings.svg" alt="settings">
-        </button>
-        
-        <div id="settings-overlay">
-            <div id="settings-top-bar">
-                <h2 id="settings-title">Settings</h2>
-                <button id="close-settings-button" onclick="hideSettingsOverlay()">
-                    <img src="res/icons/close.svg" alt="close">
-                </button>
-            </div>
-            <div id="settings-content">
-                <div class="settings-row">
-                    <label for="film-grain-slider">Enable film grain</label>
-                    <input class="slider" type="checkbox" id="film-grain-slider" onclick="toggleFilmGrain()">
-                </div>
-            </div>
-        </div>
-
-        <!-- film grain effect overlay (just for fun!) -->
-
-        <div id="film-grain-overlay"></div>
-
         <!-- main header and landing -->
 
         <header id="top-header">
@@ -141,126 +116,126 @@
                 <p>Some of the projects I worked on:</p>
 
                 <ul id="project-list">
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
-                            <span class="project-pill-marker"></span>
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
+                            <span class="project-card-marker"></span>
                             A workforce management application
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             An application used for shift-based workforce
                             management.
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java</li>
-                            <li>Play framework</li>
-                            <li>Quarkus</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Play framework</li>
+                            <li class="tag">Quarkus</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
-                            <span class="project-pill-marker"></span>
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
+                            <span class="project-card-marker"></span>
                             A blockchain based fantasy football game
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             A fast-paced project for a web3 startup building a
                             blockchain based fantasy football game.
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
-                            <li>Express</li>
-                            <li>Blockchain</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">Express</li>
+                            <li class="tag">Blockchain</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
-                            <span class="project-pill-marker"></span>
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
+                            <span class="project-card-marker"></span>
                             Bar and restaurant ordering system
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             Performance and ease of use oriented project. 
                             UI/UX design + development.
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>UI/UX</li>
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">UI/UX</li>
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
                             A leasing application for a major bank
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             A project focused on performance and security while
                             integrating with existing legacy systems.
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
-                            <li>SOAP</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">SOAP</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
                             An HR system synchronization tool
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             A project synchronizing employee data between
                             multiple human resources systems
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java</li>
-                            <li>Quarkus</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Quarkus</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
                             A billing application for a major telecom company
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             Development and maintenance of a large legacy system
                             used for monthly user billing
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java</li>
-                            <li>Spring MVC</li>
-                            <li>Apache FreeMarker</li>
-                            <li>SOAP</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring MVC</li>
+                            <li class="tag">Apache FreeMarker</li>
+                            <li class="tag">SOAP</li>
                         </ul>
                     </li>
 
-                    <li class="project-pill">
-                        <h3 class="project-pill-title">
+                    <li class="card project-card">
+                        <h3 class="project-card-title">
                             An accounting and management application
                         </h3>
-                        <p class="project-pill-description">
+                        <p class="project-card-description">
                             An accounting and management application used by
                             local government units, utility companies, property
                             management companies and small and medium
                             businesses.
                         </p>
-                        <ul class="project-pill-tech-tags">
-                            <li>Java EE</li>
-                            <li>C#</li>
-                            <li>.NET</li>
-                            <li>TypeScript</li>
-                            <li>Angular</li>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java EE</li>
+                            <li class="tag">C#</li>
+                            <li class="tag">.NET</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">Angular</li>
                         </ul>
                     </li>
                 </ul>
@@ -280,41 +255,5 @@
         <footer>
             <div id="bottom-content">Made with ❤️ by me</div>
         </footer>
-
-        <!-- script placed at the bottom as content needs to be rendered before script can access it -->
-
-        <script>
-            const settingsOverlay = document.getElementById("settings-overlay");
-            const openSettingsButton = document.getElementById("open-settings-button");
-            const closeSettingsButton = document.getElementById("close-settings-button");
-            const filmGrainSlider = document.getElementById("film-grain-slider");
-            
-            const filmGrainOverlay = document.getElementById("film-grain-overlay");
-
-
-            function showSettingsOverlay() {
-                settingsOverlay.style.display = "flex";
-            }
-
-            function hideSettingsOverlay() {
-                settingsOverlay.style.display = "none";
-            }
-
-            function startFilmGrain() {
-                filmGrainOverlay.style.display = "block"
-            }
-
-            function stopFilmGrain() {
-                filmGrainOverlay.style.display = "none"
-            }
-
-            function toggleFilmGrain() {
-                if (filmGrainSlider.checked) {
-                    startFilmGrain();
-                } else {
-                    stopFilmGrain();
-                }
-            }
-        </script>
     </body>
 </html>

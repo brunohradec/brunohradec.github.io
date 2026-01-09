@@ -62,112 +62,6 @@ a {
     color: var(--color-fg-primary);
 }
 
-/* settings overlay */
-
-#open-settings-button, #close-settings-button {
-    border: 0;
-    background-color: transparent;
-
-    img {
-        height: 2rem;
-    }
-}
-
-#open-settings-button {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 2rem;
-}
-
-#settings-overlay {
-    /* Settgins are not displayed by default 
-     * until the settings button is clicked. */
-    display: none;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    box-sizing: border-box;
-    z-index: 9999;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-
-    width: 100%;
-
-    background-color: var(--color-bg-secondary);
-    padding: 0.2rem;
-    border-bottom: 1px solid var(--color-bg-border);
-
-    @media (min-width: 800px) {
-        width: 25rem;
-        border-radius: 2rem;
-        margin: 1.2rem;
-        border: 1px solid var(--color-bg-border);
-    }
-}
-
-#settings-top-bar {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 0.8rem 0.4rem 1.4rem;
-}
-
-#settings-title {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-#settings-content {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0.4rem 0.8rem 0.8rem 1.4rem;
-}
-
-.settings-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* film grain overlay */
-
-#film-grain-overlay {
-    /* Film grain is not displayed by default 
-     * until the slider button is clicked in settings. */
-    display: none;
-
-    /* Make the overlay click through */
-    pointer-events: none;
-
-    position: fixed;
-    width: 300%;
-    height: 300%;
-
-    background: url(res/film-grain.png);
-    opacity: 0.1;
-
-	animation: .2s steps(3, jump-none) infinite grain-movement;
-}
-
-@keyframes grain-movement {
-	0% { background-position: 234px 0; }
-    25% { background-position: 123px 0; }
-	50% { background-position: 0 123px; }
-    75% { background-position: 234px 123px; }
-	100% { background-position: 345px 123px; }
-}
-
 /* typography */
 
 h2 {
@@ -328,14 +222,7 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-.project-pill {
-    box-sizing: border-box;
-    
-    background-color: var(--color-bg-secondary);
-    padding: 1.5rem;
-    border-radius: 2rem;
-    border: 1px solid var(--color-bg-border);
-
+.project-card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -348,7 +235,7 @@ main section h3 {
     }
 }
 
-.project-pill-title {
+.project-card-title {
     font-size: var(--desktop-size-p);
     font-weight: bold;
     color: var(--color-fg-primary);
@@ -357,11 +244,11 @@ main section h3 {
     padding: 0;
 }
 
-.project-pill-description {
+.project-card-description {
     color: var(--color-fg-primary);
 }
 
-.project-pill-tech-tags {
+.project-card-tech-tags {
     list-style-type: none;
     
     margin: 0;
@@ -372,14 +259,7 @@ main section h3 {
     flex-wrap: wrap;
 }
 
-.project-pill-tech-tags li {
-    background-color: var(--color-bg-pill);
-    
-    color: var(--color-bg-primary);
-    font-weight: 500;
-    
-    border-radius: 0.6rem;
-    
+.project-card-tech-tags li {
     padding: 0.2rem 0.5rem;
     margin: 0 0.3rem 0.3rem 0;
 }
@@ -398,40 +278,25 @@ main section h3 {
     margin: 3rem 0 0 0;
 }
 
-/* slider */
+/* card component */
 
-.slider {
-    appearance: none;
-    position: relative;
-    display: inline-block;
-    box-sizing: content-box;
-    width: 4.5em;
-    height: 2em;
-    padding: 0.2em;
-    border: none;
-    cursor: pointer;
-    border-radius: 1.5em;
-    overflow: hidden;
-    background-color: var(--color-bg-border);
-    transition: background 0.3s ease;
+.card {
+    box-sizing: border-box;
+
+    background-color: var(--color-bg-secondary);
+    padding: 1.5rem;
+    
+    border-radius: 2rem;
+    border: 1px solid var(--color-bg-border);
 }
 
-.slider:before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 2;
-    width: 2em;
-    height: 2em;
-    background: var(--color-white);
-    border-radius: 1.5em;
-    transition: transform 0.2s ease;
-}
+/* tag component */
 
-.slider:checked {
-    background-color: var(--color-accent);
-}
-
-.slider:checked:before {
-    transform: translateX(2.5em);
+.tag {
+    background-color: var(--color-bg-pill);
+    
+    color: var(--color-bg-primary);
+    font-weight: 500;
+    
+    border-radius: 0.6rem;
 }
