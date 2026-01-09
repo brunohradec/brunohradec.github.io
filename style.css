@@ -219,8 +219,23 @@ main section h3 {
     padding: 0;
 }
 
+#other-skills-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 #other-skills-list li {
+    margin: 1.2rem 0 0 0;
+    padding: 0 0 0 1rem;
     max-width: var(--p-width-limit);
+    border-left: 4px solid var(--color-bg-border);
+}
+
+.other-skill-list-title {
+    size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* projects section */
