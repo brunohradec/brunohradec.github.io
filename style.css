@@ -5,12 +5,12 @@
 
 :root {
     /* colors */
-    --color-bg-primary: #161210;
+    --color-bg-primary: #c8bdb0;
     --color-bg-secondary: #201d1c;
     --color-bg-border: #3a3533;
     --color-bg-pill: #d4979e;
 
-    --color-fg-primary: #bdbdbd;
+    --color-fg-primary: #201d1c;
 
     --color-accent: #eda870;
     --color-accent-shadow: #865832;
