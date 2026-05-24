@@ -259,10 +259,10 @@ main section h3 {
 
     margin: 0.8rem 0;
 
-    transition: transform .4s;
+    transition: transform 0.4s;
     
     @media (min-width: 800px) {
-        width: 25%;
+        width: 24rem;
         margin: 0 1rem 1rem 0;
     }
 }
