@@ -142,9 +142,8 @@ h3 {
 }
 
 #top-header-subtitle {
-    color: var(--color-secondary);
     margin: 2.25rem 0 0 0;
-    line-height: var(--mobile-size-h2);
+    line-height: 2rem;
 
     @media (min-width: 800px) {
         margin: 2.25rem 0 0 0;
@@ -152,6 +151,15 @@ h3 {
         /* Correction to optically align the subtitle with the title */
         padding: 0 0 0 0.1rem;
     }
+}
+
+#subtitle-main {
+    color: var(--color-secondary);
+}
+
+#subtitle-and-more {
+    color: var(--color-accent);
+    font-style: italic;
 }
 
 #top-header-nav ul {
