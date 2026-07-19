@@ -5,18 +5,16 @@
 
 :root {
     /* colors */
-    --color-bg-primary: #161210;
-    --color-bg-secondary: #201d1c;
-    --color-bg-border: #3a3533;
-    --color-bg-pill: #d4979e;
+    --color-bg-primary: #c6c1b7;
+    --color-bg-secondary: #d3cdc2;
+    --color-bg-border: #5e6574;
+    --color-bg-pill: #D4979E;
 
-    --color-fg-primary: #bdbdbd;
+    --color-fg-primary: #16161D;
 
-    --color-accent: #eda870;
-    --color-accent-shadow: #865832;
-    --color-secondary: #d4979e;
-
-    --color-white: #ffffff;
+    --color-accent: #d0783a;
+    --color-accent-shadow: #9d5623;
+    --color-secondary: #1c9092;
     
     /* font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
@@ -60,6 +58,7 @@ body {
 a {
     text-decoration: underline;
     color: var(--color-fg-primary);
+    font-weight: 500;
 }
 
 /* typography */
@@ -90,6 +89,27 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    /* Long lines deco */
+    --line-color: color-mix(in srgb, var(--color-bg-border) 25%, transparent);
+
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 39px,
+            var(--line-color),
+            var(--line-color) 40px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 39px,
+            var(--line-color),
+            var(--line-color) 40px
+        );
+
+    border-bottom: 1px solid var(--line-color);
 }
 
 #top-header-content {
@@ -314,6 +334,7 @@ main section h3 {
 #bottom-content {
     background-color: var(--color-bg-secondary);
     color: var(--color-fg-primary);
+    border-top: 1px solid var(--color-bg-border);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -340,7 +361,7 @@ main section h3 {
 .tag {
     background-color: var(--color-bg-pill);
     
-    color: var(--color-bg-primary);
+    color: var(--color-fg-primary);
     font-weight: 500;
     
     border-radius: 0.6rem;
