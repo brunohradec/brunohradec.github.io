@@ -5,16 +5,16 @@
 
 :root {
     /* colors */
-    --color-bg-primary: #c6c1b7;
-    --color-bg-secondary: #d3cdc2;
-    --color-bg-border: #5e6574;
-    --color-bg-pill: #D4979E;
+    --color-bg-primary: #C6C1B7;        /* TOFU */
+    --color-bg-secondary: #D3CDC2;      /* FRESH TOFU */
+    --color-bg-border: #5E6574;         /* SHADES OF COOL */
+    --color-bg-pill: #D4979E;           /* STRANGE PINK */
 
-    --color-fg-primary: #16161D;
+    --color-fg-primary: #16161D;        /* EIGENGRAU */
 
-    --color-accent: #d0783a;
-    --color-accent-shadow: #9d5623;
-    --color-secondary: #1c9092;
+    --color-accent: #D0783A;            /* TANGERINE */
+    --color-accent-shadow: #9D5623;     /* DARK TANGERINE */
+    --color-secondary: #1C9092;         /* TRAIN COMPARTMENT */
     
     /* font stacks */
     --font-stack-sans:  "IBM Plex Sans", sans-serif;
