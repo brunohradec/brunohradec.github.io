@@ -11,6 +11,7 @@
     --color-bg-pill: #D4979E;           /* STRANGE PINK */
 
     --color-fg-primary: #16161D;        /* EIGENGRAU */
+    --color-fg-grey: #5E6574;           /* SHADES OF COOL */
 
     --color-accent: #D0783A;            /* TANGERINE */
     --color-accent-shadow: #9D5623;     /* DARK TANGERINE */
@@ -342,6 +343,11 @@ main section h3 {
     justify-content: center;
     padding: 1rem 0;
     margin: 3rem 0 0 0;
+}
+
+#ai-notice {
+    color: var(--color-fg-grey);
+    font-style: italic;
 }
 
 /* card component */
