@@ -17,9 +17,6 @@
 
     window.addEventListener('resize', resize);
     resize();
-    
-
-    // fish config
 
     // total number of fishes swimming on the screen, smaller on mobile screens
     const FISH_COUNT = window.innerWidth < 768 ? 5 : 9;;   
