@@ -6,7 +6,7 @@
 
     function resize() {
         dpr = window.devicePixelRatio || 1;
-        width = window.innerWidth;
+        width = document.documentElement.clientWidth;
         height = window.innerHeight;
         canvas.width = width * dpr;
         canvas.height = height * dpr;
@@ -29,7 +29,7 @@
     const WANDER_STRENGTH = 0.05;   // how often does a fish change direction
 
     // colors the fishes can appear in
-    const COLORS = ['#f67417', '#40b1b1', '#f7484e', '#e97a87'];
+    const COLORS = ['#df752a', '#e9a033', '#db9514'];
 
     // tracking the current position of the mouse pointer.
     const pointer = { x: -9999, y: -9999, active: false };
