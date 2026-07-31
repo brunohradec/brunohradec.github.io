@@ -206,7 +206,7 @@ h3 {
 #top-header-nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 1.563rem 0 0 0;;
+    margin: 1.563rem 0 0 0;
     font-size: 1.2rem;
 
     @media (min-width: 800px) {
@@ -230,7 +230,7 @@ main {
 /* sections (general) */
 
 main section {
-    margin-bottom: 7.59375rem;;
+    margin-bottom: 7.59375rem;
 }
 
 main section h2 {
@@ -263,7 +263,7 @@ main section h3 {
 }
 
 .key-skill-list-title {
-    size: 1rem;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }
@@ -282,7 +282,7 @@ main section h3 {
 }
 
 .other-skill-list-title {
-    size: 1rem;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }

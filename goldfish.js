@@ -19,7 +19,7 @@
     resize();
 
     // total number of fishes swimming on the screen, smaller on mobile screens
-    const FISH_COUNT = window.innerWidth < 768 ? 5 : 9;;   
+    const FISH_COUNT = window.innerWidth < 768 ? 5 : 9;   
 
     const FLEE_RADIUS = 140;        // how close cursor needs to be to spook a fish
     const FLEE_FORCE = 0.9;         // strength of the running away acceleration
