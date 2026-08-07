@@ -236,6 +236,28 @@ main section h3 {
     max-width: var(--p-width-limit);
 }
 
+/* interests section */
+
+#interests {
+    max-width: var(--p-width-limit);
+}
+
+#interests-list {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.4rem;
+}
+
+#interests-list .tag {
+    padding: 0.2rem 0.5rem;
+}
+
 /* skills section */
 
 #key-skills-list {
@@ -324,18 +346,18 @@ main section h3 {
 
 .project-card-tech-tags {
     list-style-type: none;
-    
+
     margin: 0;
     padding: 0;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.5rem 0.4rem;
 }
 
 .project-card-tech-tags .tag {
     padding: 0.2rem 0.5rem;
-    margin: 0 0.3rem 0.3rem 0;
 }
 
 /* bottom content */
