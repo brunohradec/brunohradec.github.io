@@ -224,6 +224,14 @@ main section h3 {
 
 /* about section */
 
+#about {
+    margin-top: 3.375rem;
+
+    @media (min-width: 800px) {
+        margin-top: 5.061rem;
+    }
+}
+
 #about p {
     max-width: var(--p-width-limit);
 }
