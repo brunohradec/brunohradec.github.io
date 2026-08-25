@@ -215,9 +215,9 @@ main section h3 {
     color: var(--color-secondary);
 }
 
-/* about section */
+/* about this website section */
 
-#about {
+#about-website {
     margin-top: 3.375rem;
 
     @media (min-width: 800px) {
@@ -225,7 +225,13 @@ main section h3 {
     }
 }
 
-#about p {
+#about-website p {
+    max-width: var(--p-width-limit);
+}
+
+/* about me section */
+
+#about-me p {
     max-width: var(--p-width-limit);
 }
 
