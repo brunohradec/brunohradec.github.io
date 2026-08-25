@@ -166,6 +166,8 @@ h3 {
     margin: 2.25rem 0 0 0;
     line-height: 1.4rem;
 
+    color: var(--color-secondary);
+
     @media (min-width: 800px) {
         margin: 2.25rem 0 0 0;
 
@@ -173,15 +175,6 @@ h3 {
         padding: 0 0 0 0.1rem;
         line-height: 2rem;
     }
-}
-
-#subtitle-main {
-    color: var(--color-secondary);
-}
-
-#subtitle-and-more {
-    color: var(--color-accent);
-    font-style: italic;
 }
 
 #top-header-nav ul {
