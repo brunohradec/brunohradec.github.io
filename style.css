@@ -122,7 +122,8 @@ h3 {
 }
 
 #top-header-title {
-    font-size: var(--mobile-size-h1);
+    /* Fluid size so title never overflows (Plex Mono glyphs are 0.6em wide) */
+    font-size: clamp(3rem, 20vw, var(--mobile-size-h1));
     line-height: 0.875;
 
     font-family: var(--font-stack-title);
@@ -144,7 +145,7 @@ h3 {
         -1px 1px var(--color-accent-shadow);
 
     @media (min-width: 800px) {
-        font-size: var(--desktop-size-h1);
+        font-size: clamp(5rem, 12vw, var(--desktop-size-h1));
         
         text-shadow: 
             -1px 0 var(--color-accent-shadow), 
