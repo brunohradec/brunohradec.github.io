@@ -43,7 +43,10 @@
 /* general styles */
 
 html {
-    scroll-behavior: smooth;
+    /* Only animate scrolling for users who haven't asked for reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
 }
 
 body {
