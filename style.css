@@ -264,6 +264,73 @@ main section h3 {
     max-width: var(--p-width-limit);
 }
 
+/* projects section */
+
+#project-list {
+    list-style-type: none;
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#project-list .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin: 0.8rem 0;
+
+    /* Only animate the hover zoom for users who haven't asked for reduced motion */
+    @media (prefers-reduced-motion: no-preference) {
+        transition: transform 0.4s;
+    }
+
+    @media (min-width: 800px) {
+        width: 24rem;
+        margin: 0 1rem 1rem 0;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #project-list .card:hover {
+        transform: scale(1.04);
+    }
+}
+
+.project-card-title {
+    font-size: var(--desktop-size-p);
+    font-weight: bold;
+    color: var(--color-fg-primary);
+
+    margin: 0;
+    padding: 0;
+}
+
+.project-card-description {
+    color: var(--color-fg-primary);
+}
+
+.project-card-tech-tags {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.4rem;
+}
+
+.project-card-tech-tags .tag {
+    padding: 0.2rem 0.5rem;
+}
+
 /* uses page */
 
 #uses-intro p {
