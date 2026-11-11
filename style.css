@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     /* colors */
     --color-bg-primary: #161210;        /* western nights */
@@ -109,6 +112,42 @@ h3 {
         );
 
     border-bottom: 1px solid var(--line-color);
+}
+
+/* back home link for subpages */
+
+.back-nav {
+    margin: 2.25rem var(--mobile-global-margin) 0;
+
+    @media (min-width: 800px) {
+        margin: 3.375rem var(--desktop-global-margin) 0;
+    }
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.back-link img {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* subpage title */
+
+.page-title {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--color-accent);
+    margin: 0 0 1.563rem 0;
+
+    @media (min-width: 800px) {
+        font-size: 4.5rem;
+    }
 }
 
 #top-header-content {
@@ -223,6 +262,47 @@ main section h3 {
 
 #about p {
     max-width: var(--p-width-limit);
+}
+
+/* uses page */
+
+#uses-intro p {
+    max-width: var(--p-width-limit);
+}
+
+#uses-intro {
+    margin-top: 3.375rem;
+    margin-bottom: 3.375rem;
+}
+
+.uses-updated {
+    color: var(--color-secondary);
+    font-family: var(--font-stack-title);
+    font-size: 0.875rem;
+}
+
+main section.uses-category:not(:last-child) {
+    margin-bottom: 3.375rem;
+}
+
+.uses-list {
+    max-width: var(--p-width-limit);
+    padding-left: 1.25rem;
+    line-height: 1.6;
+}
+
+.uses-list li {
+    margin-bottom: 0.6rem;
+}
+
+.uses-list li::marker {
+    color: var(--color-accent);
+}
+
+/* Item names: links and unlinked names share the same weight */
+.uses-list a,
+.uses-list strong {
+    font-weight: 600;
 }
 
 /* bottom content */
