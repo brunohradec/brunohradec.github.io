@@ -293,7 +293,7 @@ main section h3 {
     }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
     #project-list .card:hover {
         transform: scale(1.04);
     }
