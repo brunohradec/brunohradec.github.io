@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#161210" />
+
+        <title>Bruno Hradec</title>
+        <link rel="icon" type="image/svg+xml" href="./res/favicon.svg" />
+
+        <meta name="author" content="Bruno Hradec" />
+        <meta name="description" content="Bruno Hradec - personal website."/>
+
+        <link rel="canonical" href="https://brunohradec.me/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://brunohradec.me/" />
+        <meta property="og:title" content="Bruno Hradec" />
+        <meta property="og:description" content="Bruno Hradec - personal website."/>
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Bruno Hradec" />
+        <meta name="twitter:description" content="Bruno Hradec - personal website." />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Bruno Hradec",
+                "url": "https://brunohradec.me",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Zagreb",
+                    "addressCountry": "HR"
+                },
+                "sameAs": [
+                    "https://github.com/brunohradec"
+                ]
+            }
+        </script>
+
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- verification for google search console access -->
+        <meta name="google-site-verification" content="QR6dZpUa3sBKyGt-8q6EB2Nj6xgquxJRntwabwW7J2E" />
+    </head>
+
+    <body>
+        <!-- main header and landing -->
+
+        <header id="top-header">
+            <div id="top-header-content">
+                <h1 id="top-header-title">Bruno<br>Hradec</h1>
+                
+                <p id="top-header-subtitle">Hi there!</p>
+
+                <nav id="top-header-nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="uses.html">What I use</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- page main sections -->
+
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Hi, I'm Bruno. I live in Zagreb, Croatia, and I like to spend my time 
+                    coding stuff, reading and doing photography.
+                </p>
+                <p>
+                    Professionally, I'm a software engineer (full-stack), 
+                    with a passion for building things with computers. 
+                    Starting with an empty file and ending up with something people 
+                    actually love and use has never stopped being fun for me.
+                </p>
+                <p>
+                    This website is just a hobby project. I plan on expanding it soon.
+                </p>
+                <p>
+                    You can find some of my code on <a href="https://github.com/brunohradec">GitHub</a>.
+                </p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <p>Some of the things I worked on:</p>
+
+                <ul id="project-list">
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A blockchain based fantasy football game
+                        </h3>
+                        <p class="project-card-description">
+                            A startup building a fantasy football game
+                            that ran on the blockchain.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">Express</li>
+                            <li class="tag">Blockchain</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A workforce management application
+                        </h3>
+                        <p class="project-card-description">
+                            A data-heavy application used for shift-based
+                            workforce management. Most of the work was based 
+                            on complex rules in a large, legacy codebase.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Play framework</li>
+                            <li class="tag">Quarkus</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A bar and restaurant ordering system
+                        </h3>
+                        <p class="project-card-description">
+                            Built for someone holding a phone in one hand in the
+                            middle of a busy shift, so speed and staying out of
+                            the way mattered more than anything else. I did the
+                            UI/UX design on this one as well as the coding.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">UI/UX</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A book notes management app
+                        </h3>
+                        <p class="project-card-description">
+                            Something I built for myself in Go, to manage
+                            my notes on the books I read across Calibre and
+                            Obsidian. Reading is one of my favourite things
+                            so it was nice to write something which helps me
+                            everyday.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Go</li>
+                            <li class="tag">Calibre</li>
+                            <li class="tag">Obsidian</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A leasing application for a major bank
+                        </h3>
+                        <p class="project-card-description">
+                            It was a bank, so security and performance were super
+                            important, and a lot of the work was getting new code 
+                            to talk to legacy systems that predated it by decades, 
+                            which was an interesting challenge.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring Boot</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                            <li class="tag">SOAP</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            An HR system synchronization tool
+                        </h3>
+                        <p class="project-card-description">
+                            Keeping employee data in sync across several HR
+                            systems, each different from the other one, and 
+                            everything downstream could break if it was wrong.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Quarkus</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">React</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            A billing application for a major telecom company
+                        </h3>
+                        <p class="project-card-description">
+                            A legacy system that billed every customer, every
+                            month, and had done for years. There's no small mistakes
+                            in billing, which turns out to be a good way to learn to 
+                            write code carefully.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java</li>
+                            <li class="tag">Spring MVC</li>
+                            <li class="tag">Apache FreeMarker</li>
+                            <li class="tag">SOAP</li>
+                        </ul>
+                    </li>
+
+                    <li class="card">
+                        <h3 class="project-card-title">
+                            An accounting and management application
+                        </h3>
+                        <p class="project-card-description">
+                            Used by local government units, utility companies,
+                            property managers and smaller businesses, all with
+                            very different needs. Also the one project where I 
+                            worked across both Java and .NET.
+                        </p>
+                        <ul class="project-card-tech-tags">
+                            <li class="tag">Java EE</li>
+                            <li class="tag">C#</li>
+                            <li class="tag">.NET</li>
+                            <li class="tag">TypeScript</li>
+                            <li class="tag">Angular</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- page footer -->
+
+        <footer>
+            <div id="bottom-content">
+                <span>Designed and coded with ❤️ by me</span>
+            </div>
+        </footer>
+    </body>
+</html>
